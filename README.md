@@ -7,6 +7,7 @@
 * Strings
 * Matrices
 * Linked List
+* Set
 * Stack
 * Queue
 * Trees

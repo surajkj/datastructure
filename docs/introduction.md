@@ -14,6 +14,18 @@ Data structure is simply an arrangement of data in the main memory, so that oper
 
 ### Type of data structures
 #### Physical data structures
-  
+Physical data structure defines how the memory is organised/allocated. Ex. of this can be array or linked list
+
 #### Logical data structures
+Logical data structures are implemented using physical data structures. Ex. of logical data structure is stack, queue, tree, graph, hashtable
+
+### Abstract datatype (ADT)
+* abstract - without knowing internal details, we can use it
+* datatype - representation of data & operation that can be performed on the data
+
+Define the data, operations on the data & let it be used as a datatype, hiding the internal details. This is the concept of ADT. 
+Ex. of ADt are list, set, map, tree etc.
+
+### Time and space complexity
+TODO:- To be added later
 
