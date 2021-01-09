@@ -1,7 +1,7 @@
 # Learn data structure
 
 * [Introduction](docs/introduction.md)
-* Arrays Representation
+* [Arrays Representation](docs/arrays-representation.md)
 * Array ADT
 * Recursion
 * Strings
