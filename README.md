@@ -2,7 +2,7 @@
 
 * [Introduction](docs/introduction.md)
 * [Arrays Representation](docs/arrays-representation.md)
-* Array ADT
+* [Array ADT / List](docs/array-adt.md)
 * Recursion
 * Strings
 * Matrices
