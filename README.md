@@ -4,7 +4,7 @@
 * [Arrays Representation](docs/arrays-representation.md)
 * [Array ADT / List](docs/array-adt.md)
 * Recursion
-* Strings
+* [Strings](docs/string.md)
 * Matrices
 * Linked List
 * Set

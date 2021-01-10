@@ -6,9 +6,9 @@ public class Demo {
         Demo demo = new Demo();
         try {
             demo.basicOperations();
-//            demo.arithmetic();
-//            demo.linearSearch();
-//            demo.binarySearch();
+            demo.arithmetic();
+            demo.linearSearch();
+            demo.binarySearch();
 
         }catch(Exception e){
             e.printStackTrace();
