@@ -7,6 +7,7 @@ public class Demo {
         try {
             demo.basicOperations();
             demo.linearSearch();
+            demo.binarySearch();
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -52,5 +53,21 @@ public class Demo {
 
     private void binarySearch(){
         BinarySearch binarySearch = new BinarySearch();
+        binarySearch.add(3);
+        binarySearch.add(5);
+        binarySearch.add(8);
+        binarySearch.add(11);
+        binarySearch.add(14);
+        binarySearch.add(17);
+        binarySearch.add(19);
+        binarySearch.add(20);
+        binarySearch.add(22);
+        binarySearch.add(25);
+        binarySearch.add(32);
+        binarySearch.add(35);
+
+        System.out.println("\nPerforming binary search\n");
+        System.out.println("Index of 20 is "+ binarySearch.search(20));
+        System.out.println("Index of 30 is "+ binarySearch.search(30));
     }
 }
