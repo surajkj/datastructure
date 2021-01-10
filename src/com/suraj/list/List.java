@@ -2,9 +2,9 @@ package com.suraj.list;
 
 public class List {
 
-    private int[] data;
-    private int size = 0;
-    private static int DEFAULT_CAPACITY = 10;
+    int[] data;
+    int size = 0;
+    static int DEFAULT_CAPACITY = 10;
 
     /**
      * constructor initialize the newly created array with default capacity
