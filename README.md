@@ -17,5 +17,4 @@
 * Graphs
 
 
-
-
+Note:- For the sake of simplicity, have used int data type for most of the examples
