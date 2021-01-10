@@ -6,9 +6,9 @@ public class Demo {
         Demo demo = new Demo();
         try {
             demo.basicOperations();
-            demo.arithmetic();
-            demo.linearSearch();
-            demo.binarySearch();
+//            demo.arithmetic();
+//            demo.linearSearch();
+//            demo.binarySearch();
 
         }catch(Exception e){
             e.printStackTrace();
@@ -24,7 +24,7 @@ public class Demo {
         list.add(4);
         list.add(5);
 
-        System.out.println("Size of array "+ list.getSize());
+        System.out.println("\nSize of array "+ list.getSize());
         list.display();
 
         System.out.println("\nInserting element at given position \n");
@@ -36,12 +36,20 @@ public class Demo {
         list.delete(6);
         list.delete(0);
         list.display();
-        System.out.println("Size of array "+ list.getSize());
+        System.out.println("\nSize of array "+ list.getSize());
 
-        System.out.println("Element at position 2 is "+ list.getElement(2));
+        System.out.println("\nElement at position 2 is "+ list.getElement(2));
 
-        System.out.println("Replace value at an index");
+        System.out.println("\nReplace value at an index");
         list.setElement(2, 7);
+        list.display();
+
+        System.out.println("\nReversing an array");
+        list.reverse();
+        list.display();
+
+        System.out.println("\nShifting element by 1 position");
+        list.shift();
         list.display();
     }
 
@@ -58,7 +66,7 @@ public class Demo {
         int min = list.min();
         int max = list.max();
 
-        System.out.println("Sum "+sum + "\nAverage "+ avg + "\nMin "+ min+"\nMax "+ max);
+        System.out.println("\nSum "+sum + "\nAverage "+ avg + "\nMin "+ min+"\nMax "+ max);
     }
 
     private void linearSearch(){

@@ -18,7 +18,7 @@ own list with all the commonly used operations. This will be implemented purely 
 7. set(index, x) - Replace the value of an element at the given index
 8. max() / min() - Max & min value in an array
 9. reverse() - Reverse the array
-10. shift() / rotate()
+10. shift() / rotate() - Shift the elements by given position
 
 
 [Code Example](../src/com/suraj/list/Demo.java)

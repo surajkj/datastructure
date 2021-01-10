@@ -174,4 +174,27 @@ public class List {
         }
         return sum;
     }
+
+    /**
+     * Reverse elements in an array
+     */
+    public void reverse(){
+        int temp;
+        for(int i = 0, j =size-1 ; i < size / 2; i++, j--) {
+            temp = data[i];
+            data[i] = data[j];
+            data[j] = temp;
+        }
+    }
+
+    /**
+     * Shift elements by 1 position
+     */
+    public void shift(){
+        int temp = data[0];
+        for(int i = 0; i < size; i++) {
+            data[i] = data[i+1];
+        }
+        data[size-1] = temp;
+    }
 }
