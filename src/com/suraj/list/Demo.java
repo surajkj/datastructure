@@ -19,6 +19,13 @@ public class Demo {
             list.insert(0, 0);
             list.insert(3, 3);
             list.display();
+
+            System.out.println("\nDelete an element from given position\n");
+            list.delete(6);
+            list.delete(0);
+            list.display();
+            System.out.println("Size of array "+ list.getSize());
+
         }catch(Exception e){
             e.printStackTrace();
         }

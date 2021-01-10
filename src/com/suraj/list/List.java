@@ -64,13 +64,13 @@ public class List {
     }
 
     /**
-     *
+     * Add an element at a given index
      * @param index index at with vale needs to be added
      * @param value value to be inserted
      * @throws Exception If index is more then current size throw an exception
      */
     public void insert(int index, int value) throws Exception {
-        if(index > size)
+        if(index < 0 || index > size)
             throw new Exception("Invalid index");
         ensureCapacity();
         for(int i = size; i > index; i--) {
@@ -78,5 +78,20 @@ public class List {
         }
         data[index] = value;
         size++;
+    }
+
+    /**
+     * Delete an element from the given index
+     * @param index index that need to be deleted
+     * @throws Exception If index is more then current size throw an exception
+     */
+    public void delete(int index) throws Exception {
+        if(index < 0 || index > size)
+            throw new Exception("Invalid index");
+        for(int i = index; i < size-1; i++) {
+            data[i] = data[i+1];
+        }
+        data[size-1] = 0;
+        size--;
     }
 }
