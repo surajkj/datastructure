@@ -94,4 +94,84 @@ public class List {
         data[size-1] = 0;
         size--;
     }
+
+    /**
+     * Get element at given index
+     * @param index position for which element is required
+     * @return element value
+     * @throws Exception If index is more then current size throw an exception
+     */
+    public int getElement(int index) throws Exception {
+        if(index < 0 || index > size)
+            throw new Exception("Invalid index");
+        return data[index];
+    }
+
+    /**
+     * Set element at given index
+     * @param index index for which value needs to be replaced
+     * @param element new element value
+     * @throws Exception If index is more then current size throw an exception
+     */
+    public void setElement(int index, int element) throws Exception {
+        if(index < 0 || index > size)
+            throw new Exception("Invalid index");
+        data[index] = element;
+    }
+
+    /**
+     * Biggest value from array
+     * @return Biggest value from array
+     * @throws Exception If no element in array
+     */
+    public int max() throws Exception {
+        if(size < 1)
+            throw new Exception("No data in array");
+        int max = data[0];
+        for(int i = 0; i < size; i++) {
+            if(max < data[i])
+                max = data[i];
+        }
+        return max;
+    }
+
+    /**
+     * Smallest value from an array
+     * @return Smallest value from an array
+     * @throws Exception If no element in array
+     */
+    public int min() throws Exception {
+        if(size < 1)
+            throw new Exception("No data in array");
+        int min = data[0];
+        for(int i = 0; i < size; i++) {
+            if(min > data[i])
+                min = data[i];
+        }
+        return min;
+    }
+
+    /**
+     *
+     * @return Average of all the values in array
+     */
+    public int avg(){
+        int avg = 0;
+        for(int i = 0; i < size; i++) {
+            avg += data[i];
+        }
+        return avg / size;
+    }
+
+    /**
+     *
+     * @return Sum of all the elements in array
+     */
+    public int sum(){
+        int sum = 0;
+        for(int i = 0; i < size; i++) {
+            sum += data[i];
+        }
+        return sum;
+    }
 }

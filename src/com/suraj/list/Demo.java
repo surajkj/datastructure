@@ -6,8 +6,10 @@ public class Demo {
         Demo demo = new Demo();
         try {
             demo.basicOperations();
+            demo.arithmetic();
             demo.linearSearch();
             demo.binarySearch();
+
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -35,6 +37,28 @@ public class Demo {
         list.delete(0);
         list.display();
         System.out.println("Size of array "+ list.getSize());
+
+        System.out.println("Element at position 2 is "+ list.getElement(2));
+
+        System.out.println("Replace value at an index");
+        list.setElement(2, 7);
+        list.display();
+    }
+
+    public void arithmetic() throws Exception {
+        List list = new List();
+        list.add(4);
+        list.add(2);
+        list.add(5);
+        list.add(9);
+        list.add(3);
+
+        int sum = list.sum();
+        int avg = list.avg();
+        int min = list.min();
+        int max = list.max();
+
+        System.out.println("Sum "+sum + "\nAverage "+ avg + "\nMin "+ min+"\nMax "+ max);
     }
 
     private void linearSearch(){
