@@ -102,4 +102,30 @@ public class BasicString {
          String reverseWord = reverse(word);
         return reverseWord.equalsIgnoreCase(word);
     }
+
+    /**
+     * Anagram are words which can be made using same set of characters
+     * @param word1 First word
+     * @param word2 Second word
+     * @return boolean value of anagram status
+     */
+    public boolean anagram(String word1, String word2){
+        int[] allCharsCount = new int[255];
+
+        char[] word1Char = word1.toCharArray();
+        char[] word2Char = word2.toCharArray();
+        if(word1Char.length != word2Char.length){
+            return false;
+        }
+        for (int i = 0; i < word1Char.length; i++) {
+            allCharsCount[word1Char[i] - 97]++;
+            allCharsCount[word2Char[i] - 97]--;
+        }
+        for (int j : allCharsCount) {
+            if (j != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
