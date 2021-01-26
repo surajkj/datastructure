@@ -64,12 +64,32 @@ public class BasicString {
         return wordCount+1;
     }
 
+    /**
+     * reverse using extra array
+     * @param word word to be reversed
+     * @return reverse of input word
+     */
     public String reverse(String word){
         char[] wordChar = word.toCharArray();
-        char[] reverseString = new char[wordChar.length+1];
+        char[] reverseString = new char[wordChar.length];
         for (int i = wordChar.length-1, j=0; i >= 0; i--, j++) {
             reverseString[j] = wordChar[i];
         }
         return new String(reverseString);
+    }
+
+    /**
+     * Reverse without using extra space
+     * @param word word to be reversed
+     * @return reverse of input word
+     */
+    public String reverseBinary(String word){
+        char[] wordChar = word.toCharArray();
+        for (int i = 0, j = wordChar.length -1 ; i < wordChar.length/2; i++, j--) {
+            char temp = wordChar[i];
+            wordChar[i] = wordChar[j];
+            wordChar[j] = temp;
+        }
+        return new String(wordChar);
     }
 }

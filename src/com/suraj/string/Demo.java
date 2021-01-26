@@ -15,6 +15,7 @@ public class Demo {
         basicString.vowelsConsonentCount("How are you?");
         System.out.println("Word count "+ basicString.wordCount("Are you enjoying    this code  ?"));
         System.out.println("Reverse of Reverse is "+ basicString.reverse("Reverse"));
+        System.out.println("Reverse using binary search "+ basicString.reverseBinary("Reverse"));
     }
 
 }
