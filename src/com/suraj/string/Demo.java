@@ -14,6 +14,7 @@ public class Demo {
         System.out.println("Case change "+ basicString.changeCase("Welcome to Java World!"));
         basicString.vowelsConsonentCount("How are you?");
         System.out.println("Word count "+ basicString.wordCount("Are you enjoying    this code  ?"));
+        System.out.println("Reverse of Reverse is "+ basicString.reverse("Reverse"));
     }
 
 }

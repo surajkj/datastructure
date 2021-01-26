@@ -63,4 +63,13 @@ public class BasicString {
         }
         return wordCount+1;
     }
+
+    public String reverse(String word){
+        char[] wordChar = word.toCharArray();
+        char[] reverseString = new char[wordChar.length+1];
+        for (int i = wordChar.length-1, j=0; i >= 0; i--, j++) {
+            reverseString[j] = wordChar[i];
+        }
+        return new String(reverseString);
+    }
 }
