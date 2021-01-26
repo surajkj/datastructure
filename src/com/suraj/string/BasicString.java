@@ -52,4 +52,15 @@ public class BasicString {
         }
         System.out.println("There are "+vCount +" vowels and "+ cCount +" consonents in "+ word);
     }
+
+    public int wordCount(String word){
+        char[] wordChar = word.toCharArray();
+        int wordCount = 0;
+        for (int i = 0; i < wordChar.length; i++) {
+            if(wordChar[i] == ' ' && wordChar[i-1] != ' '){
+                wordCount++;
+            }
+        }
+        return wordCount+1;
+    }
 }
