@@ -92,4 +92,14 @@ public class BasicString {
         }
         return new String(wordChar);
     }
+
+    /**
+     * Palindrome string is a string where the reverse of string is same
+     * @param word word to check
+     * @return boolean value of palindrome status
+     */
+    public boolean palindrome(String word){
+         String reverseWord = reverse(word);
+        return reverseWord.equalsIgnoreCase(word);
+    }
 }
