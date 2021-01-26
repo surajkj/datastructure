@@ -11,8 +11,8 @@ public class Demo {
         BasicString basicString = new BasicString();
         basicString.declare();
         basicString.length();
-
         System.out.println("Case change "+ basicString.changeCase("Welcome to Java World!"));
+        basicString.vowelsConsonentCount("How are you?");
     }
 
 }
